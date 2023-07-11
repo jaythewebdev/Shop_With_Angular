@@ -1,0 +1,15 @@
+.navbar{
+    background-color: rgb(171, 28, 52);
+}
+.logo{
+    font-size: 2rem;
+    color:yellow;
+    border: 2px solid;
+    padding: 0.4rem;
+}
+a{
+    color:bisque;
+    font-weight: 800;
+    margin-left: 2rem;
+}
+

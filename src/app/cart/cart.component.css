@@ -1,0 +1,24 @@
+.alert{
+    text-align: center;
+}
+.tbl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+.btn{
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(181, 58, 79);
+}
+.except{
+    border: none;
+    width: 100%;
+}
+td,th{
+    padding: 2rem 5rem;
+    border: 4px double rgb(171, 28, 52);
+    background-color: rgb(239, 240, 240);
+}

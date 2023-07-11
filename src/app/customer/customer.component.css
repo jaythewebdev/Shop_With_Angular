@@ -1,0 +1,13 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.card{
+    border-radius: 8px;
+    border:3px solid ;
+    background-color: rgb(239, 240, 240);
+
+}

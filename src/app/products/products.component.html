@@ -1,0 +1,3 @@
+<div *ngFor="let p of products">
+    <app-product (selectProduct)="selectPic($event)" [product]="p" ></app-product>
+</div>

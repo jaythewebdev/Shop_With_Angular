@@ -1,0 +1,14 @@
+<div class="alert">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="product.pic" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{product.name}}</h5>
+              <p class="card-text">Product ID :{{product.id}}&nbsp;&nbsp;<i class="bi bi-hand-thumbs-up-fill" (click)="incrementLikes()"></i>&nbsp;{{product.likes}}<br>
+            Available Quantity {{product.quantity}}</p>
+            <div class="bottom">
+                <button [disabled]="product.quantity==0" href="#" class="btn" (click)="buy()">Buy @ {{product.price | currency:'INR'}}</button>
+                <i [class]="favClass" (click)="favToggle()" id="heart"></i>&nbsp;        
+            </div>
+            </div>
+        </div>  
+</div>

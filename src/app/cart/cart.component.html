@@ -1,0 +1,25 @@
+<div *ngIf="cart.length>0 else cartEmpty" class="tbl">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr *ngFor="let product of cart">
+            <td>{{product.name}}</td>
+            <td>{{product.price | currency:'INR'}}</td>
+            <td>{{product.quantity}}</td>
+        </tr>
+        <tr>
+            <td class="except"></td>
+            <td class="except"><button class="btn"  (click)="showPoints()">Checkout</button>
+            </td>
+            <td class="except"></td>
+        </tr>
+    </table>
+</div>
+<ng-template #cartEmpty>
+    <h1 class="alert alert-danger">Oops! Your cart is empty !!
+    </h1>
+</ng-template>
+<router-outlet></router-outlet>

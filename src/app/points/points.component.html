@@ -1,0 +1,8 @@
+<div *ngIf="cart.length>0 else cartEmpty" class="tbl">
+    <h1 class="alert alert-success">Total Points : {{TotalPoints}}
+    </h1>
+</div>
+<ng-template #cartEmpty>
+    <h1 class="alert alert-danger">Total Points : {{TotalPoints}}
+    </h1>
+</ng-template>
